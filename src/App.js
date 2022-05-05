@@ -27,7 +27,7 @@ function App() {
            <Route path="/introduction" exact component={Introduction}></Route> 
            <Route path="/content" exact component={Content}></Route> 
            <Route path="/profile" exact component={Profile}></Route>
-           {/* <Route path="/profile_update" exact component={Profile_Update}></Route> */}
+            <Route path="/profile_update" exact component={Profile_Update}></Route> 
            <Route path="/discover" exact component={Discover}></Route>
            <Route path="/hirejob_signup" exact component={Hire_Signup}></Route>
            <Route path="/hirejob_login" exact component={Hire_Login}></Route>
