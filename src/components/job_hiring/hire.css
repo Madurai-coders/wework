@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@500&family=Poppins:wght@300;400;500;600&family=Quicksand:wght@300&family=Source+Sans+Pro&display=swap");
+
+
+
+
+
+.hirenav_dot {
+  background-color: #fff;
+  border: 2px solid black;
+  padding: 6px 6px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 160px;
+  position: relative;
+  bottom: 5px;
+}
+.hirenav_brand {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+.hirenav_dot:hover{
+       background-color:dodgerblue ;
+       border: 2px solid white;
+}
+.hirenav_brand:hover {
+  color: white;
+}
+.hire_user {
+  font-size: 20px;
+  margin-right: 150px;
+  color: rgb(102, 102, 102);
+}
+.hirenav_txt {
+  margin-right: 20px;
+  font-size: 15px;
+  margin-top: 6px;
+  color: rgb(102, 102, 102);
+}
+.hirenav_txt:hover {
+  color: black;
+}
+.hire_form {
+  width: 100vw;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+}
+.hire_formcontent {
+  display: flex;
+  width: 370px;
+  height: 530px;
+  background-color: #fff;
+  border-radius: 12px;
+  margin-top: 130px;
+  position: relative;
+  right: 165px;
+}
+.hire_formtitle {
+  display: flex;
+  color: white;
+  font-weight: 300;
+  position: relative;
+  left: 190px;
+}
+.hire_formsubtitle {
+  display: flex;
+  color: white;
+  font-weight: 300;
+  position: relative;
+  left: 195px;
+  bottom: 20px;
+}
+input,
+input::-webkit-input-placeholder {
+  font-size: 12px;
+}
+.hire_jobinput {
+  margin-top: 30px;
+  margin-left: 25px;
+}
+.job_inputbox {
+  margin-top: 2px;
+  width: 310px;
+  height: 29px;
+  border-color: black;
+  border-radius: 1px;
+}
+.job_inputbox:focus {
+  box-shadow: none;
+  border-color: rgb(66, 161, 255);
+}
+.job_txt {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.hire_companyinput {
+  margin-top: 15px;
+  margin-left: 25px;
+}
+.company_inputbox {
+  width: 100px !important;
+  height: 29px;
+  border-color: black;
+  border-radius: 1px;
+  margin-top: 2px;
+  margin-right: 35px;
+}
+.company_inputbox:focus {
+  box-shadow: none;
+  border-color: rgb(66, 161, 255);
+}
+.company_txt {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.company_iconbox {
+  margin-top: 1px;
+  width: 30px;
+  height: 29px;
+  border-color: black !important;
+  border-radius: 0px;
+  background-color: none;
+}
+.workplace_txt {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.hire_workplaceinput {
+  margin-top: 15px;
+}
+.workplace_inputbox {
+  width: 310px;
+  height: 29px;
+  border-color: black;
+  border-radius: 1px;
+  margin-top: -20px;
+  margin-top: 2px;
+}
+.workplace_inputbox:focus {
+  box-shadow: none;
+  border-color: rgb(66, 161, 255);
+}
+.hire_employeeinput {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+.employee_inputbox {
+  width: 310px;
+  height: 29px;
+  border-color: black;
+  border-radius: 1px;
+  margin-top: 2px;
+}
+.employee_inputbox:focus {
+  box-shadow: none;
+  border-color: rgb(66, 161, 255);
+}
+.employee_txt {
+  font-weight: 300;
+  font-size: 15px;
+}
+.hire_start {
+  padding: 10px 105px;
+  border-radius: 32px;
+}
+.hiring_conceptsite{
+  background-color:rgb(243,246,248);  
+  height: 440px;   
+}
+.discussion_img{
+       width: 350px;
+       height: 350px;
+       border-radius: 50%;
+}
+.hiring_quality{
+       margin-top: 130px;
+     color: rgb(42, 42, 42);  
+     font-weight: 300;
+     font-size: 36px;
+     font-family: "poppins", sans-serif;
+
+}
+.hiring_qualitytxt{
+       margin-top: 25px;
+       font-weight: 200;
+}
+.hiring_success{
+       font-weight: 300;
+       font-size: 35px;
+}
+.member_img{
+       border-radius: 50%;
+       width: 150px;
+       height: 150px;
+       margin-left: -40px;
+}
+.member_detail{
+       margin-left: 30px;
+}
+.hiring_successtitle{
+       font-weight: 300;
+}
+.member_jobname{
+       font-weight: 300;
+}
+.hiring_footer{
+       display: flex;
+       justify-content: center;
+       margin-top: 230px;
+       height: 150px;
+       background-color: rgb(245, 240, 233);
+}
+.rules_abouthiring{
+       font-size: 14px;
+       font-weight: 300;
+}
+.footer_menu{
+       font-size: 14px;
+       font-weight: 300;
+}
+menu{
+       font-size: 14px;
+       margin-left: 15px;
+       color: dodgerblue;     
+}
+
+

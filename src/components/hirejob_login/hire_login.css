@@ -1,0 +1,24 @@
+.hire_login{
+       display: flex;
+       justify-content: center;
+       height: 100vh;
+}
+.login_content{
+       width: 350px;
+       height: 410px;
+       background-color: white;
+       border-radius: 12px;
+       margin-top: 150px;
+}
+
+.hirelogin_txt{  
+       font-size: 40px;
+       font-weight: 400;
+}
+
+.hire_loginbtn{
+       margin-top: 40px;
+       margin-left: 33px;
+       border-radius: 16px;
+       padding: 6px 107px;
+}

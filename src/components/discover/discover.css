@@ -1,0 +1,73 @@
+.slider_box {
+  width: 1000px;
+  height: 250px;
+  background-color: rgb(255, 246, 235);
+}
+.slider_left {
+  color: dimgray;
+  font-size: 35px;
+  position: absolute;
+  top: 260px;
+  margin-left: 5px;
+}
+.slide_img1 {
+  width: 400px;
+  height: 200px;
+}
+.overlay_slider {
+  width: 25px; /* Full width (cover the whole page) */
+  height: 250px; /* Full height (cover the whole page) */
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(
+    198,
+    198,
+    198,
+    0.5
+  ); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+.featured_btn {
+  background-color: rgba(198, 198, 198, 0.5);
+  color: black;
+  border: none;
+  font-weight: 600;
+}
+.featured_btn:hover {
+  background-color: rgba(198, 198, 198, 0.5);
+  color: black;
+}
+.slider_img {
+  width: 430px;
+}
+.slider_text {
+  width: 545px;
+}
+.slider_rightbox{
+  width: 25px;
+  background-color: rgba(198, 198, 198, 0.5);
+}
+.slider_profile {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.slider_profilename {
+  margin-left: -5px;
+  margin-top: 3px;
+}
+.slider_profilejob {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: -85px;
+  margin-top: 40px;
+}
+.slider_right{
+       color: dimgray;
+  font-size: 35px;
+  margin-left: 7px;
+  margin-top: 100px;
+}

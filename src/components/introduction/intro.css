@@ -1,0 +1,58 @@
+  .intro_img{
+     width: 100%;
+       height: 100vh;
+}  
+.overlay{
+       position: absolute; 
+       width: 100%; 
+       height: 27%; 
+       top: 100px;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       z-index: 2; 
+       cursor: pointer;  
+       padding: 0; 
+       
+
+}
+.intro_txt{
+       margin-left: 35px;
+       line-height: 60px;
+       font-weight: 350;
+}
+
+.ripple {
+       background-color: rgb(16, 79, 204);
+       background-position: center;
+       transition: background 0.8s;
+margin-left: 45px;
+font-size: 18px;
+     }
+     .ripple:hover {
+            text-decoration: underline;
+            background-color: rgb(16, 79, 204);
+            box-shadow: none;
+            border: none;
+     }
+     .ripple:active {
+       background-color: #0d5ea0;
+       background-size: 100%;
+       transition: background 2s;
+     }
+
+@media only screen and (max-width: 740px) {
+       .intro_txt{
+              margin-top: 30px;
+              line-height: 40px;
+       }
+       }
+
+       @media only screen and (max-width: 524px) {
+              .intro_txt{
+                     font-size: 25px;
+                     margin-top: 100px;
+                     line-height: 30px;
+              }}
+
+

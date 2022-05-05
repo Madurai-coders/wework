@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;400;500;600&family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@500&family=Poppins:wght@300;400;500;600&family=Quicksand:wght@300&family=Source+Sans+Pro&display=swap");
+
+.title {
+  font-size: 50px;
+  line-height: 65px;
+  color: rgb(75, 132, 244);
+}
+.priya{
+  display: none;
+}
+.priya_1{
+  display: block;
+}
+
+.card {
+  width: 450px;
+  height: 60px;
+}
+.card:hover {
+  box-shadow: 1px 1px blueviolet;
+}
+.card_title {
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  font-weight: 600;
+}
+.card:hover .card_title {
+  color: blueviolet;
+}
+.angle_right {
+  position: absolute;
+  top: 15px;
+  left: 400px;
+  font-size: 31px;
+}
+.card:hover .angle_right {
+  color: blueviolet;
+}
+.angle_right1 {
+  position: absolute;
+  top: 15px;
+  left: 400px;
+  font-size: 31px;
+}
+.card:hover .angle_right1 {
+  color: blueviolet;
+}
+.angle_right2 {
+  position: absolute;
+  top: 15px;
+  left: 400px;
+  font-size: 31px;
+}
+.card:hover .angle_right2 {
+  color: blueviolet;
+}
+.content_2 {
+  background-color: rgb(75, 132, 244, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.content2_title1 {
+  font-family: "Quicksand", sans-serif;
+  line-height: 55px;
+  font-weight: 500;
+}
+.content2_title2 {
+  color: rgb(102, 102, 102);
+}
+.b_1 {
+  border-radius: 32px;
+  padding: 10px 20px;
+}
+.b_2 {
+  border-radius: 32px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #6c757d;
+  border: none;
+}
+.show {
+  border: none;
+ 
+  margin-left: 15px;
+}
+.hide{
+  border: none;
+margin-left: 15px;
+}
+.show_more {
+  margin-left: 10px;
+}
+.show1{
+  display: none;
+}
+.show_1 {
+  border: none;
+}
+.show2 {
+  display: none;
+}
+.bts {
+  display: none;
+}
+.bts1 {
+  display: block;
+}
+.bts_1 {
+  display: none;
+}
+.bts2 {
+  display: block;
+}
+.content3_title {
+  line-height: 50px;
+  font-family: "Quicksand", sans-serif;
+  color: dodgerblue;
+  font-weight: 600;
+}
+.post_job {
+  padding: 10px 25px;
+  border-radius: 32px;
+}
+.card-title {
+  line-height: 45px;
+  font-family: "Quicksand", sans-serif;
+  color: rgb(183, 78, 47);
+  font-weight: 600;
+  margin-top: 30px;
+}
+.card-description {
+  margin-top: 10px;
+  font-size: 27px;
+  font-family: "Quicksand", sans-serif;
+}
+.card_img {
+  margin-left: 200px;
+  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+}
+
+.previous {
+  border: none;
+  margin-right: 10px;
+}
+.next {
+  border: none;
+}
+.previous:hover {
+  background-color: white;
+  color: #6c757d;
+}
+.next:hover {
+  background-color: white;
+  color: #6c757d;
+}
+
+.dot_footer {
+  background-color: #fff;
+  border: 2px solid black;
+  padding: 8px 8px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 20px;
+  position: fixed;
+}
+
+.brand_footer {
+  position: relative;
+  top: 2px;
+  text-decoration: none;
+  color: black;
+}
+.brand_footer:hover {
+  color: black;
+}
+.brandname_footer {
+  position: fixed;
+  left: 146px;
+  top: 29.3px;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 19px;
+  color: black;
+}
+.footer h6 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+}
+.container-fluid {
+  padding: 0 0;
+}
+
+@media screen and (max-width: 1151px) {
+  .title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 1139px) {
+  .title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .f_title{
+         font-size: 17px;
+         margin-top: 40px;
+         margin-left: 40px;
+  }
+ 
+
+
+}
+@media screen and (max-width: 698px) {
+  .title {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .card-title {
+    font-size: 25px;
+    margin-top: 25px;
+  }
+  .card_img {
+    margin-left: 90px;
+    margin-top: 15px;
+  }
+  .f_title{
+         margin-top: 40px;
+         margin-left: 40px;
+  }
+  .footer h6{
+       margin-left: 40px;
+}
+.dot_footer{
+       position: absolute;
+       left: 10px;
+}
+.brandname_footer{
+       left: 80px;
+}
+
+}
+@media screen and (max-width: 975px) {
+  .card-description {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .card_img {
+    margin-left: 5px;
+    margin-top: 15px;
+  }
+}

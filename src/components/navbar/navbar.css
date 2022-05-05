@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;400;500;600&family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@500&family=Poppins:wght@300;400;500;600&family=Quicksand:wght@300&family=Source+Sans+Pro&display=swap");
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(214, 209, 209);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(214, 208, 208);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dot {
+  background-color: #fff;
+  border: 2px solid black;
+  padding: 6px 6px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.brand {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+.brand:hover {
+  color: black;
+}
+.brand_name {
+  position: relative;
+  left: 92px;
+  top: 2px;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 19px;
+  color: black;
+}
+
+.vl {
+  border-left: 2px solid rgb(198, 198, 198);
+  height: 35px;
+}
+.join {
+  color: rgb(102, 102, 102);
+  padding: 4px 10px;
+  margin: 0 0 35px 0;
+  margin-top: 5px;
+  position: relative;
+  right: 30px;
+  top: 2px;
+  border: none;
+}
+.sign_in {
+  padding: 5px 15px;
+  margin: 5px 0 5px 0;
+  border-radius: 16px;
+  margin-right: 50px;
+  position: relative;
+  bottom: 12px;
+  right: 50px;
+}
+.sign_in:hover {
+  background-color: rgb(166, 202, 255) !important;
+  color: rgb(10, 76, 175);
+}
+
+ul {
+  position: relative;
+  top: 10px;
+}
+ul li {
+  display: inline-block;
+  padding: 0 30px;
+}
+
+.nav_list a {
+  font-family: "Poppins", sans-serif;
+  color: rgb(102, 102, 102);
+  text-decoration: none;
+}
+.menulist1 {
+  margin-left: -14px;
+}
+.menulist2 {
+  margin-left: -10px;
+}
+.menulist {
+  margin-left: -20px;
+}
+.menu1:hover {
+  color: black;
+}
+.menu1:hover .discover {
+  color: black;
+}
+/* join */
+
+.join_slide{
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  justify-content:center;
+  display: flex;
+}
+.box{
+  display: flex;
+  margin-top: 150px;
+  width: 850px;
+  height: 300px;
+  background-color: white;
+  border-radius: 4px;
+}
+.join_img{
+  width: 380px;
+}
+.join_form{
+  width: 520px;
+}
+.join_image{
+  width: 350px;
+}
+.looking_job{
+  margin-top: 54px;
+  margin-left: 30px;
+  font-weight: 400;
+}
+.join_cancel{
+  border: none;
+}
+.join_cancel:hover{
+  background-color: #fff;
+  color: rgb(102, 102, 102);
+  text-decoration: underline;
+}
+.join_now{
+  border: none;
+  padding: 5px 20px;
+}
+.join_now:hover{
+  background-color:rgb(25, 128, 230,1);
+padding: 5px 20px;
+ 
+}
+
+
+@media only screen and (max-width: 723px) {
+  .sign_in {
+    left: -17px;
+  }
+}
+
+@media only screen and (max-width: 389px) {
+  .sign_in {
+    bottom: 71px;
+    left: 120px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .vl {
+    display: none;
+  }
+}

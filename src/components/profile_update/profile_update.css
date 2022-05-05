@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&family=Nunito&family=Playfair+Display:wght@500&family=Poppins:wght@300;400;500;600&family=Quicksand:wght@300&family=Source+Sans+Pro&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans:wght@300;400&family=Playfair+Display:wght@500&family=Poppins:wght@300;400;500;600&family=Quicksand:wght@300&family=Source+Sans+Pro&display=swap");
+.experience_update {
+  border: 0.1px solid rgb(189, 186, 186);
+  border-radius: 4px;
+  width: 750px;
+  height: 225px;
+  margin-top: 20px;
+  margin-top: 60px;
+}
+.work_txt {
+  margin-left: 35px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+}
+.work_add {
+  left: 635px;
+  position: relative;
+  bottom: 35px;
+  padding: 5px 26px;
+  border-radius: 32px;
+}
+.work_add:hover {
+  background-color: rgb(214, 232, 255) !important;
+  color: rgb(13, 110, 253);
+}
+.work_status {
+  border-radius: 4px;
+  width: 699px;
+  height: 120px;
+  background-color: rgb(255, 228, 196, 0.5);
+  margin-left: 25px;
+}
+
+.work_status1 {
+  display: block;
+}
+.work_statushide {
+  display: none;
+}
+.warning_icon {
+  margin-left: 20px;
+  margin-top: 20px;
+  color: indigo;
+  font-size: 18px;
+}
+.work_statustitle {
+  margin-left: 10px;
+  font-size: 17px;
+}
+.work_statusmsg {
+  font-size: 14px;
+  margin-left: 45px;
+  margin-top: 20px;
+  line-height: 22px;
+  font-weight: 400;
+}
+.overlay_work {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white; /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+.close_work {
+  display: flex;
+  justify-content: end;
+}
+.work_form {
+  display: flex;
+  justify-content: center;
+}
+.ex_title {
+  font-weight: 400;
+  color: rgb(13, 110, 253);
+}
+.checkbox {
+  width: 600px;
+  height: 200px;
+}
+.select_firstjob {
+  border: 0.1px solid rgb(189, 186, 186);
+  border-radius: 4px;
+  width: 600px;
+  height: 70px;
+  margin-left: 10px;
+  display: block;
+}
+.select_firstjobhide {
+  display: none;
+}
+
+.rating {
+  color: gold;
+  font-size: 35px;
+  margin-left: 25px;
+  margin-top: 15px;
+}
+.first_job {
+  margin-top: -35px;
+  margin-left: 76px;
+  font-size: 18px;
+}
+.work_cancelsave {
+  display: flex;
+  justify-content: end;
+}
+.work_cancelsavehide {
+  display: none;
+}
+
+.workcancel_btn {
+  margin-left: 5px;
+  border: none;
+  text-decoration: underline;
+}
+.workcancel_btn:hover {
+  background-color: white;
+  color: rgb(13, 110, 253);
+}
+.worksave_btn {
+  margin-left: 5px;
+  border-radius: 16px;
+  padding: 2px 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.experience_form {
+  display: none;
+}
+
+.experience_formshow {
+  display: block;
+  position: relative;
+  right: 25px;
+}
+.line {
+  width: 250px;
+  position: relative;
+  bottom: 30px;
+}
+
+.line_2 {
+  width: 250px;
+  margin-top: 55px;
+  position: relative;
+  bottom: 120px;
+  left: 274px;
+}
+.or {
+  position: relative;
+  bottom: 58px;
+  left: 290px;
+  color: rgb(151, 150, 150);
+}
+.standout {
+  border: 0.1px solid rgb(189, 186, 186);
+  border-radius: 4px;
+  width: 535px;
+  height: 100px;
+  margin-left: 30px;
+  position: relative;
+  bottom: 80px;
+}
+.select_icon {
+  font-size: 50px;
+  color: rgb(81, 141, 21);
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.standout_txt {
+  position: relative;
+  bottom: 50px;
+  left: 80px;
+  font-size: 19px;
+  font-weight: 500;
+}
+.workform_cancelsave {
+  display: flex;
+  justify-content: end;
+}
+
+.workformcancel_btn {
+  margin-left: 5px;
+  border: none;
+  text-decoration: underline;
+}
+.workformcancel_btn:hover {
+  background-color: white;
+  color: rgb(13, 110, 253);
+}
+.workformsave_btn {
+  margin-left: 5px;
+  border-radius: 16px;
+  padding: 2px 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.companyname {
+  position: absolute;
+  left: 50px;
+  top: 680px;
+  color: rgb(13, 110, 253);
+}
+.jobrole {
+  position: absolute;
+  top: 725px;
+  left: 50px;
+}
+.responsibles {
+  position: absolute;
+  left: 50px;
+  top: 755px;
+}
+.editwork {
+  position: absolute;
+  left: 680px;
+  top: 705px;
+  font-size: 20px;
+  color: rgb(114, 112, 112);
+}
+.deletework {
+  position: absolute;
+  left: 680px;
+  top: 750px;
+  font-size: 20px;
+  color: rgb(114, 112, 112);
+}
+.education_update {
+  border: 0.1px solid rgb(189, 186, 186);
+  border-radius: 4px;
+  width: 750px;
+  height: 240px;
+  margin-top: 30px;
+}
+
+.education {
+  margin-left: 35px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.education_add {
+  left: 635px;
+  position: relative;
+  bottom: 35px;
+  padding: 5px 26px;
+  border-radius: 32px;
+}
+.education_add:hover {
+  background-color: rgb(214, 232, 255) !important;
+  color: rgb(13, 110, 253);
+}
+
+.education_status1 {
+  border-radius: 4px;
+  width: 699px;
+  height: 150px;
+  background-color: rgb(255, 228, 196, 0.5);
+  margin-left: 25px;
+}
+.warning_icons {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.education_show {
+  display: block;
+}
+.education_hide {
+  display: none;
+}
+.education_txt {
+  position: relative;
+  bottom: 25px;
+  left: 60px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.education_txt1 {
+  position: relative;
+  bottom: 25px;
+  left: 60px;
+}
+
+.overlay_education {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white; /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+.close_education {
+  display: flex;
+  justify-content: end;
+}
+.education_form {
+  display: flex;
+  justify-content: center;
+}
+.edu_title {
+  font-weight: 400;
+  color: rgb(13, 110, 253);
+}
+.select {
+  font-size: 35px;
+  color: rgb(81, 81, 81);
+  position: relative;
+  bottom: 45px;
+  left: 480px;
+}
+.menu_lists {
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  box-shadow: 0.5px 1px 1.5px 1.5px rgb(32, 32, 32, 0.1);
+}
+.education_level {
+  position: absolute;
+  left: 50px;
+  top: 940px;
+}
+.Status {
+  position: absolute;
+  left: 50px;
+  top: 980px;
+}
+.start_date {
+       position: absolute;
+       left: 50px;
+       top: 1020px;
+       font-size: 15px;
+     }
+     .end_date {
+       position: absolute;
+       left: 50px;
+       top: 1050px;
+       font-size: 15px;
+     }
+
+
+
+
+
+.editeducation {
+       position: absolute;
+       left: 680px;
+       top: 950px;
+       font-size: 20px;
+       color: rgb(114, 112, 112);
+     }
+     .deleteeducation {
+       position: absolute;
+       left: 680px;
+       top: 985px;
+       font-size: 20px;
+       color: rgb(114, 112, 112);
+     }

@@ -1,0 +1,123 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(214, 209, 209);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(214, 208, 208);
+}
+
+.hirewebsitenav_dot {
+  background-color: #fff;
+  border: 2px solid black;
+  padding: 6px 6px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 160px;
+  position: relative;
+  bottom: 5px;
+}
+.hirewebsitenav_brand {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+.hirewebsitenav_dot:hover {
+  background-color: dodgerblue;
+  border: 2px solid white;
+}
+.hirewebsitenav_brand:hover {
+  color: white;
+}
+.hirewebsite_user {
+  font-size: 20px;
+  margin-right: 150px;
+  color: rgb(102, 102, 102);
+}
+.hirewebsitenav_txt {
+  margin-right: 20px;
+  font-size: 15px;
+  margin-top: 6px;
+  color: rgb(102, 102, 102);
+}
+.hirewebsitenav_txt:hover {
+  color: black;
+}
+
+.hires_website h1 {
+  color: blue;
+}
+
+.website_content {
+  width: 700px;
+  height: 635px;
+  background-color: aliceblue;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-left: 400px;
+}
+.logo {
+  width: 700px;
+  height: 50px;
+  background-color: cornflowerblue;
+  z-index: 100000;
+  position: fixed;
+}
+
+.logo_dot {
+  background-color: #fff;
+  border: 2px solid black;
+  padding: 6px 6px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  line-height: 50px;
+  font-size: 18px;
+  margin-left: 40px;
+}
+.logo_brand {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+.logo_brand:hover {
+  color: black;
+}
+.job_update {
+  width: 700px;
+}
+.job_1 {
+  width: 700px;
+  height: 150px;
+}
+.company_logo {
+  width: 150px;
+  height: 135px;
+}
+.job1_logo {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 20px;
+  top: 75px;
+}
+
+.job2_logo {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 20px;
+  top: 15px;
+}

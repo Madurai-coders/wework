@@ -1,0 +1,111 @@
+.name_warning{
+       color: red;
+       position: fixed;
+       top: 145px;
+       left: 675px;
+}
+
+.lastname_warning{
+       color: red;
+       position: absolute;
+       top: 220px;
+       left: 675px;
+}
+.address_warning{
+       color: red;
+       position: absolute;
+       top: 291px;
+       left: 520px;
+
+}
+.city_warning{
+       color: red;
+       position: absolute;
+       top: 361px;
+       left: 520px;   
+}
+
+.zipcode_warning{
+       color: red;
+       position: absolute;
+       top: 361px;
+       left: 920px;   
+}
+
+.phoneno_warning{
+       color: red;
+       position: absolute;
+       top: 431px;
+       left: 520px;   
+}
+
+.email_warning{
+       color: red;
+       position: absolute;
+       top: 505px;
+       left: 520px;   
+}
+.state_warning{
+       color: red;
+       position: absolute;
+       top: 358px;
+       left: 714px; 
+}
+.jobtitle_warning{
+       color: red;
+       position: absolute;
+}
+
+.hireemail_warning{
+       position: absolute;
+       color: red;
+       left: 624px;
+       top: 450px;
+}
+.hirepassword_warning{
+       position: absolute;
+       color: red;
+       left: 624px;
+       top: 540px;
+}
+.hireusername_warning{
+       position: absolute;
+       color: red;
+       left: 624px;
+       top: 360px;
+}
+.hireloginemail_warning{
+       position: absolute;
+       color: red;
+       left: 635px;
+       top: 320px;
+}
+.hireloginpassword_warning{
+       position: absolute;
+       color: red;
+       left: 635px;
+       top: 410px;
+}
+.companyname_warning{
+       color: red;
+       position: absolute;
+      
+}
+.jobrole_warning{
+       color: red;
+       position: absolute;
+}
+.responsibles_warning{
+       color: red;
+       position: absolute;
+}
+.educationlevel_warning{
+       position: absolute;
+       color: red;
+       left: 470px;
+}
+.status_warning{
+       position: absolute;
+       color: red;
+       left: 470px;
+}
