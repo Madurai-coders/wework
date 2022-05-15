@@ -13,7 +13,7 @@ import Job_website from './components/job_website/job';
 import Lookingjob_Signup from "./components/lookingjob_signup/lookingjob_signup";
 import Lookingjob_Login from './components/lookingjob_login/lookingjob_login';
 import Hires_website from './components/hires_website/hires_website';
-
+import Task_star from './components/task_star/taskstar';
 function App() {
   return (
     <>
@@ -23,6 +23,7 @@ function App() {
 
         <Switch>
 
+        <Route path="/" exact component={Task_star}></Route> 
 
            <Route path="/introduction" exact component={Introduction}></Route> 
            <Route path="/content" exact component={Content}></Route> 
