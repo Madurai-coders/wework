@@ -8,10 +8,21 @@ function Java_tasks() {
   const [result, setresult] = useState();
 
   function submit() {
-    let text = entry;
-    let position = text.search(search);
+    
+    const value = entry;
+    var position = [];
+    for (let i = 0; i < value.length; i++) {
+      if (value.charAt(i) == search) {
+        position.push(i);
+      }
+    }
+
     console.log(position);
     setresult(position);
+
+
+
+
 
         const data = entry;
         let occurrence = 0;
