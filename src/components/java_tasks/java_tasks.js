@@ -38,6 +38,18 @@ function Java_tasks() {
 
 
   function submit_1() {
+
+    const value = entry_1;
+    const values = value.split(" ");
+    let position_1 = [];
+    for (let i = 0; i < values.length; i++) {
+      if (values[i] == search_1) {
+        position_1.push(i);
+      }
+    }
+    console.log(position_1);
+    setresult_1(position_1);
+
     
     const data = entry_1;
     const word = data.split(" ");
