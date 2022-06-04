@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 
+import "./find.css";
+
 function Find_replace() {
   const [entry_1, setentry_1] = useState();
   const [replace, setreplace] = useState();
   const [search, setsearch] = useState();
+  const [result, setresult] = useState();
+  const [entry, setentry] = useState();
+  const [view, setview] = useState(false);
 
   function submit() {
     const D = entry_1;
@@ -13,7 +18,7 @@ function Find_replace() {
       if (D[i] === " ") {
         dataarray.push(datastring);
         datastring = "";
-      } else if (D[i] === ".") {
+      } else if (D[i] === "." || D[i] === ",") {
         dataarray.push(datastring);
         datastring = "";
       } else {
@@ -22,15 +27,35 @@ function Find_replace() {
     }
     console.log(dataarray);
 
+    setentry(entry_1);
+
     const V = dataarray;
 
     for (let j = 0; j < V.length; j++) {
       if (V[j] === search) {
         V[j] = replace;
-      } 
+        setview(true);
+      }
     }
-    console.log(V);
-    setentry_1(V);
+
+    console.log(dataarray);
+    let val = dataarray;
+    let result = "";
+
+    for (let k = 0; k < val.length; k++) {
+      result = result.concat(val[k] + " ");
+    }
+
+    console.log(result);
+
+    setresult(result);
+    setsearch("");
+    setentry_1("");
+    setreplace("");
+
+    setTimeout(function () {
+      document.querySelector("#show").classList.add("show");
+    }, 3000);
   }
 
   return (
@@ -47,7 +72,7 @@ function Find_replace() {
               onChange={(e) => setentry_1(e.target.value)}
               type="text"
               class="form-control email"
-              id="exampleInputEmail"
+              id="enter"
               aria-describedby="emailHelp"
               style={{
                 height: 200,
@@ -65,7 +90,7 @@ function Find_replace() {
               onChange={(e) => setsearch(e.target.value)}
               type="text"
               class="form-control email"
-              id="email"
+              id="find"
               aria-describedby="emailHelp"
               style={{ width: 350 }}
             ></input>
@@ -78,7 +103,7 @@ function Find_replace() {
               onChange={(e) => setreplace(e.target.value)}
               type="text"
               class="form-control email"
-              id="exampleInputEmail1"
+              id="replace"
               aria-describedby="emailHelp"
               style={{
                 width: 350,
@@ -96,6 +121,17 @@ function Find_replace() {
             </button>
           </div>
         </div>
+        <h4 className="mt-4">Enter Text: {entry}</h4>
+        <h4 className="mt-4">Replace Text: {result}</h4>
+        {view && (
+          <>
+            <div className="overlay" id="show">
+              <div className="card text-center">
+                <span className="msg mt-2">Text Replaced Successfully!</span>
+              </div>
+            </div>
+          </>
+        )}
       </div>
     </>
   );
