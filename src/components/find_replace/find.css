@@ -27,6 +27,20 @@
       background-color: rgb(67,160,71);
       color: white;
     }
-    .show{
-      display: none;
+    
+    .card_1{
+      width: 240px;
+      height: 45px;
+      background-color:red;
+      color: white;
+    }
+    .msg_1{
+      position: relative;
+      top:10px;
+    }
+    .card_2{
+      width: 240px;
+      height: 45px;
+      background-color:red;
+      color: white;
     }

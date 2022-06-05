@@ -1,0 +1,31 @@
+.enter_space{
+       color: red;
+       font-size: 15px;
+       position: absolute;
+}
+.enter_required{
+       color: red;
+       font-size: 15px;
+       position: absolute;
+}
+
+.search_space{
+       color: red;
+       font-size: 15px;
+       position: absolute;
+}
+.search_required{
+       color: red;
+       font-size: 15px;
+       position: absolute;
+}
+.replace_space{
+       color: red;
+       font-size: 15px;
+       position: absolute;
+}
+.replace_required{
+       color: red;
+       font-size: 15px;
+       position: absolute;
+}
