@@ -30,6 +30,7 @@ function Find_replace() {
         datastring = "";
       } else {
         datastring += entry_1[i];
+       
       }
     }
     console.log(dataarray);
