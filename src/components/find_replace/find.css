@@ -1,46 +1,108 @@
 ::-webkit-scrollbar {
-       display: none;
-     }
-     .highlight{
-      background-color: red;
-     }
-     h4{
-       margin-left: 200px;
-     }
+  display: none;
+}
+.highlight {
+  background-color: red;
+}
+h4 {
+  margin-left: 200px;
+}
 
-     .overlay {
-      position: fixed; /* Sit on top of the page content */
-      width: 16%; /* Full width (cover the whole page) */
-      height: 5%; /* Full height (cover the whole page) */
-      top:220px;
-      left: 250px;
-      right: 0;
-      bottom: 0;
-      background-color:white; /* Black background with opacity */
-      z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-      cursor: pointer; /* Add a pointer on hover */
-     
-    }
-    .card{
-      width: 240px;
-      height: 45px;
-      background-color: rgb(67,160,71);
-      color: white;
-    }
-    
-    .card_1{
-      width: 240px;
-      height: 45px;
-      background-color:red;
-      color: white;
-    }
-    .msg_1{
-      position: relative;
-      top:10px;
-    }
-    .card_2{
-      width: 240px;
-      height: 45px;
-      background-color:red;
-      color: white;
-    }
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  width: 10%; /* Full width (cover the whole page) */
+  height: 5%; /* Full height (cover the whole page) */
+  top: 220px;
+  left: 350px;
+  right: 0;
+  bottom: 0;
+  background-color: white; /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+.card {
+  width: 240px;
+  height: 45px;
+  background-color: rgb(67, 160, 71);
+  color: white;
+}
+
+.card_1 {
+  width: 240px;
+  height: 45px;
+  background-color: rgb(5, 161, 83);
+  color: white;
+}
+.msg_1 {
+  position: relative;
+  top: 10px;
+}
+
+
+.find_replace {
+  background-color: blueviolet;
+}
+.find {
+  height: 555px;
+}
+.replace {
+ height: 300px;
+ width: 200px;
+ border: 5px;
+  border-color: white;
+
+}
+.vl{
+  border-left: 2px solid white;
+  height: 555px;
+}
+.text{
+  position: relative;
+  top:5px;
+  left: 5px;
+  padding: 5px 20px;
+  background-color: rgb(255, 255, 255,1);
+}
+.email:focus {
+  border-color:blue;
+  background-color: black;
+  color: white;
+  box-shadow: none;
+}
+.email {
+  background-color: black;
+  color: white;
+}
+.text_to{
+  color: white;
+}
+.search_txt{
+  color: white;
+  margin-top: 25px;
+  margin-left: 5px;
+}
+.replace_txt{
+  color: white;
+margin-top:40px;
+margin-left: 5px;
+}
+.replace_btn{
+  background-color: rgb(41, 166, 41);
+  margin-top: 40px;
+  margin-left: 5px;
+}
+.replace_btn:hover{
+  background-color: rgb(53, 169, 53);
+}
+.replaced_txt{
+  color: white;
+
+margin-left: 5px;
+}
+.occurrence{
+  color: white;
+  margin-left: 5px;
+}
+.occurrences{
+display: none;
+}
