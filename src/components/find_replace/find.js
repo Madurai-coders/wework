@@ -119,7 +119,7 @@ function Find_replace() {
               <input
                 value={search != "not_selected" ? search : ""}
                 onKeyUp={validation_Search}
-                onChange={Search}
+                // onChange={Search}
                 type="text"
                 class="form-control email"
                 id="find"
@@ -150,7 +150,7 @@ function Find_replace() {
 
               <button
                 type="button"
-                onClick={submit}
+                // onClick={submit}
                 class="replace_btn btn btn-success"
               >
                 REPLACE
