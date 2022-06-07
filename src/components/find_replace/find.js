@@ -17,12 +17,14 @@ function Find_replace() {
 
   const Text_search = (event) => {
     setentry_1(event.target.value);
+    console.log(entry_1);
     let dataarray = [];
     let datastring = "";
     for (let i = 0; i < entry_1.length; i++) {
       if (entry_1[i] === " ") {
         dataarray.push(datastring);
         datastring = "";
+        console.log("dataarray:", dataarray);
       } else if (entry_1[i] === "." || entry_1[i] === ",") {
         dataarray.push(datastring);
         datastring = "";
@@ -31,56 +33,53 @@ function Find_replace() {
       }
     }
     console.log(dataarray);
-    setentry(dataarray);
+    //  console.log(entry_1[i])
   };
 
+  // const Search = (event) => {
+  //   setsearch(event.target.value);
+  //   let count = 0;
+  //   for (let j = 0; j < entry.length; j++) {
+  //     if (entry[j] === search) {
+  //       count++;
+  //     }
+  //     console.log("occurrence:", count);
+  //   }
+  // };
 
-
-  const Search = (event) => {
-    setsearch(event.target.value);
-    let count = 0;
-    for (let j = 0; j < entry.length; j++) {
-      if (entry[j] === search) {
-        count++;
-      }
-      console.log("occurrence:", count);
-    }
-  };
-
-
-  function submit() {
-    const D = entry_1;
-    let dataarray = [];
-    let datastring = "";
-    for (let i = 0; i < D.length; i++) {
-      if (D[i] === " ") {
-        dataarray.push(datastring);
-        datastring = "";
-      } else if (D[i] === "." || D[i] === ",") {
-        dataarray.push(datastring);
-        datastring = "";
-      } else {
-        datastring += D[i];
-      }
-    }
-    console.log(dataarray);
-    const V = dataarray;
-    let occu = 0;
-    for (let j = 0; j < V.length; j++) {
-      if (V[j] === search) {
-        V[j] = replace;
-        occu++;
-      }
-    }
-    console.log(occu);
-    console.log(dataarray);
-    let val = dataarray;
-    let result = "";
-    for (let k = 0; k < val.length; k++) {
-      result = result.concat(val[k] + " ");
-    }
-    console.log(result);
-  }
+  // function submit() {
+  //   const D = entry_1;
+  //   let dataarray = [];
+  //   let datastring = "";
+  //   for (let i = 0; i < D.length; i++) {
+  //     if (D[i] === " ") {
+  //       dataarray.push(datastring);
+  //       datastring = "";
+  //     } else if (D[i] === "." || D[i] === ",") {
+  //       dataarray.push(datastring);
+  //       datastring = "";
+  //     } else {
+  //       datastring += D[i];
+  //     }
+  //   }
+  //   console.log(dataarray);
+  //   const V = dataarray;
+  //   let occu = 0;
+  //   for (let j = 0; j < V.length; j++) {
+  //     if (V[j] === search) {
+  //       V[j] = replace;
+  //       occu++;
+  //     }
+  //   }
+  //   console.log(occu);
+  //   console.log(dataarray);
+  //   let val = dataarray;
+  //   let result = "";
+  //   for (let k = 0; k < val.length; k++) {
+  //     result = result.concat(val[k] + " ");
+  //   }
+  //   console.log(result);
+  // }
 
   function clear() {
     setsearch("not_selected");
