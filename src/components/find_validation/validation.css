@@ -1,31 +1,43 @@
 .enter_space{
-       color: red;
+       color:skyblue;
        font-size: 15px;
        position: absolute;
+       top:250px;
+       left: 30px;
 }
 .enter_required{
-       color: red;
+        color:rgb(50, 176, 225);
        font-size: 15px;
        position: absolute;
+       top:250px;
+       left: 30px;
 }
 
 .search_space{
-       color: red;
+       color:rgb(50, 176, 225);
        font-size: 15px;
        position: absolute;
+       top:355px;
+       left: 30px;
 }
 .search_required{
-       color: red;
+       color:rgb(50, 176, 225);
        font-size: 15px;
        position: absolute;
+       top:355px;
+       left: 30px;
 }
 .replace_space{
-       color: red;
+       color:rgb(50, 176, 225);
        font-size: 15px;
        position: absolute;
+       top:470px;
+       left: 30px;
 }
 .replace_required{
-       color: red;
+       color:rgb(50, 176, 225);
        font-size: 15px;
        position: absolute;
+       top:470px;
+       left: 30px;
 }

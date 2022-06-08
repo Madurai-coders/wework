@@ -38,71 +38,133 @@ h4 {
   top: 10px;
 }
 
-
 .find_replace {
-  background-color: blueviolet;
+   background-color: darkslateblue; 
+  width: 300%;
 }
 .find {
   height: 555px;
+  width: 150%;
 }
 .replace {
- height: 300px;
- width: 200px;
- border: 5px;
+  height: 300px;
+  width: 150%;
+  border: 5px;
   border-color: white;
-
 }
-.vl{
+.vl {
   border-left: 2px solid white;
   height: 555px;
 }
-.text{
+.text {
   position: relative;
-  top:5px;
+  top: 5px;
   left: 5px;
   padding: 5px 20px;
-  background-color: rgb(255, 255, 255,1);
+  background-color: rgb(255, 255, 255, 1);
 }
-.email:focus {
-  border-color:blue;
-  background-color: black;
+.text_input:focus {
+  border-color: blue;
+  background-color: rgb(27, 27, 27);
   color: white;
   box-shadow: none;
 }
-.email {
-  background-color: black;
+.text_input{
+  background-color: rgb(28, 28, 28);
   color: white;
+width: 95.3%;
+height:200px;
 }
-.text_to{
+.search_input:focus {
+  border-color: blue;
+  background-color: rgb(27, 27, 27);
   color: white;
+  box-shadow: none;
 }
-.search_txt{
+.search_input{
+  background-color: rgb(28, 28, 28);
+  color: white;
+  width: 95.3%;
+height: 55px;
+}
+.text_to {
+  color: white;
+  margin-left: 18px;
+  margin-top: 10px;
+}
+.search_txt {
   color: white;
   margin-top: 25px;
-  margin-left: 5px;
+  margin-left: 18px;
 }
-.replace_txt{
+.replace_txt {
   color: white;
-margin-top:40px;
-margin-left: 5px;
-}
-.replace_btn{
-  background-color: rgb(41, 166, 41);
   margin-top: 40px;
-  margin-left: 5px;
+  margin-left: 18px;
 }
-.replace_btn:hover{
-  background-color: rgb(53, 169, 53);
+.replace_btn {
+  background-color: rgb(41, 146, 41);
+  margin-top: 40px;
+  margin-left: 20px;
+ margin-right: 610px;
+  padding: 6px 20px;
 }
-.replaced_txt{
-  color: white;
+.replace_btn:hover {
+  background-color: rgb(63, 185, 63);
+}
 
-margin-left: 5px;
+.clear_btn {
+  background-color: rgb(222, 18, 18);
+  margin-top: 40px;
+  margin-left: 18px;
+ margin-right: 610px;
+  padding: 6px 10px;
+  position: relative;
+  bottom: 79px;
+  left: 150px;
 }
-.occurrence{
+.clear_btn:hover {
+  background-color:rgb(164, 18, 18);
+}
+.replaced_txt {
   color: white;
-  margin-left: 5px;
+  margin-left: 20px;
+  margin-top: 5px;
 }
-.occurrences{
-display: none;
+.replaced_input{
+  margin-left: 20px;
+  height: 136px;
+  width: 95.3%;
+  background-color: rgb(28, 28, 28);
+  color: white;
+}
+ .replaced_input:focus {
+  border-color: blue;
+  background-color: rgb(27, 27, 27);
+  color: white;
+  box-shadow: none;
+} 
+.check{
+ margin-left: 25px;
+  font-size: 20px;
+   color: white;
+   margin-top: 30px;
+}
+.check_box{
+  font-size: 20px;
+}
+.occurrence {
+  color: white;
+  margin-left: 30px;
+  display: none;
+  
+}
+.occurrences {
+  display: block;
+}
+code{
+  font-size: 20px;
+  color: white;
+  padding-left: 10px;
+  background-color: red;
 }
