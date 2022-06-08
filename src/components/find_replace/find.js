@@ -47,10 +47,8 @@ function Find_replace() {
       if (entry[j] === searchdata) {
         count++;
         document.getElementById("find").style.color = "white";
-      }
-      else{
+      } else {
         document.getElementById("find").style.color = "red";
-
       }
       console.log("occurrence:", count);
       setoccurrence(count);
@@ -58,35 +56,39 @@ function Find_replace() {
   };
 
   function Replace() {
-    const D = entry_1;
+
+    // split 
+
     let dataarray = [];
     let datastring = "";
-    for (let i = 0; i < D.length; i++) {
-      if (D[i] === " ") {
+    for (let i = 0; i < entry_1.length; i++) {
+      if (entry_1[i] === " ") {
         dataarray.push(datastring);
         datastring = "";
-      } else if (D[i] === "." || D[i] === ",") {
+      } else if (entry_1[i] === "." || entry_1[i] === ",") {
         dataarray.push(datastring);
         datastring = "";
       } else {
-        datastring += D[i];
+        datastring += entry_1[i];
       }
     }
     console.log(dataarray);
-    const V = dataarray;
-    let occu = 0;
-    for (let j = 0; j < V.length; j++) {
-      if (V[j] === search) {
-        V[j] = replace;
-        occu++;
+
+    // compare split and search
+
+    for (let j = 0; j < dataarray.length; j++) {
+      if (dataarray[j] === search) {
+        dataarray[j] = replace; 
       }
     }
-    console.log(occu);
     console.log(dataarray);
-    let val = dataarray;
+   
+
+    // split string  (array value set in state)
+    
     let result = "";
-    for (let k = 0; k < val.length; k++) {
-      result = result.concat(val[k] + " ");
+    for (let k = 0; k < dataarray.length; k++) {
+      result = result.concat(dataarray[k] + " ");
     }
     console.log(result);
     setresult(result);
@@ -201,7 +203,8 @@ function Find_replace() {
               </div>
 
               <h6 className="mt-4 occurrence" id="show_occurrence">
-                <code className="m-2">{occurrence} </code> Occurrences were replaced
+                <code className="m-2">{occurrence} </code> Occurrences were
+                replaced
               </h6>
             </div>
           </div>
