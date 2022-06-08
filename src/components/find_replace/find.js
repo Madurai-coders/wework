@@ -18,14 +18,14 @@ function Find_replace() {
   const Text_search = (event) => {
     setentry_1(event.target.value);
     var value = event.target.value;
-    console.log(value);
+    // console.log(value);
     let dataarray = [];
     let datastring = "";
     for (let i = 0; i < value.length; i++) {
       if (value[i] === " ") {
         dataarray.push(datastring);
         datastring = "";
-        console.log("dataarray:", dataarray);
+        // console.log("dataarray:", dataarray);
       } else if (value[i] === "." || value[i] === ",") {
         dataarray.push(datastring);
         datastring = "";
@@ -41,7 +41,7 @@ function Find_replace() {
   const Search = (event) => {
     setsearch(event.target.value);
     var searchdata = event.target.value;
-    console.log(searchdata);
+    // console.log(searchdata);
     let count = 0;
     for (let j = 0; j < entry.length; j++) {
       if (entry[j] === searchdata) {
