@@ -23,7 +23,7 @@ function Calc() {
     <>
       <div className="container-fluid">
         <div className="calculator">
-          <div className="card">
+          <div className="cards">
             <div className="setting">
               <i class="set_icon fa fa-ellipsis-v" aria-hidden="true"></i>
             </div>
@@ -37,7 +37,7 @@ function Calc() {
             </div>
             <div className="numbers mt-5">
               <div className="row m-4">
-                <div className="col-3">
+                <div className="col-3 mt-4">
                   <button
                     type="button"
                     onClick={clear}
@@ -46,17 +46,17 @@ function Calc() {
                     C
                   </button>
                 </div>
-                <div className="col-3">
+                <div className="col-3 mt-4">
                   <button type="button" className="col_1 btn btn-dark">
                     %
                   </button>
                 </div>
-                <div className="col-3">
+                <div className="col-3 mt-4">
                   <button type="button" className="col_1 btn btn-dark">
                     <i class="fa fa-times" aria-hidden="true"></i>
                   </button>
                 </div>
-                <div className="col-3">
+                <div className="col-3 mt-4">
                   <button type="button" className=" col_1 btn btn-dark">
                     /
                   </button>

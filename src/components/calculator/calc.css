@@ -8,14 +8,17 @@
   display: flex;
   justify-content: center;
 }
-.card {
+.cards {
   position: relative;
   top: 150px;
   width: 400px;
   color: white;
-  height:540px;
+  height:550px;
   background-color: black;
+  border-radius: 12px;
 }
+
+
 .setting {
   display: flex;
   justify-content: end;

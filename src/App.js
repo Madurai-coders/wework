@@ -15,6 +15,7 @@ import Lookingjob_Login from './components/lookingjob_login/lookingjob_login';
 import Hires_website from './components/hires_website/hires_website';
 import Java_tasks from "./components/java_tasks/java_tasks";
 import Find_replace from "./components/find_replace/find";
+import Calculator from './components/calculator/calc';
 function App() {
   return (
     <>
@@ -24,7 +25,7 @@ function App() {
 
         <Switch>
 
-        <Route path="/" exact component={Find_replace}></Route> 
+        <Route path="/" exact component={Calculator}></Route> 
 
            <Route path="/introduction" exact component={Introduction}></Route> 
            <Route path="/content" exact component={Content}></Route> 
