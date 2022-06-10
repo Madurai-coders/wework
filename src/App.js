@@ -27,7 +27,7 @@ function App() {
 
         <Route path="/" exact component={Calculator}></Route> 
 
-           <Route path="/introduction" exact component={Introduction}></Route> 
+           {/* <Route path="/introduction" exact component={Introduction}></Route> 
            <Route path="/content" exact component={Content}></Route> 
            <Route path="/profile" exact component={Profile}></Route>
             <Route path="/profile_update" exact component={Profile_Update}></Route> 
@@ -40,7 +40,7 @@ function App() {
            <Route path="/lookingjob_login" exact component={Lookingjob_Login}></Route>
            <Route path="/hires_website"  exact component={Hires_website }></Route>
 
-
+ */}
 
         </Switch>
       </BrowserRouter>
