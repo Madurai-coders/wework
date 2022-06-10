@@ -8,17 +8,14 @@
   display: flex;
   justify-content: center;
 }
-.cards {
+.card {
   position: relative;
   top: 150px;
   width: 400px;
   color: white;
-  height:550px;
+  height:540px;
   background-color: black;
-  border-radius: 12px;
 }
-
-
 .setting {
   display: flex;
   justify-content: end;
@@ -102,4 +99,8 @@ input:focus,input:active{
 }
 .result{
 color: white;
+}
+h4{
+  position: relative;
+  bottom: 20px;
 }

@@ -2,28 +2,41 @@ import "./calc.css";
 import React, { useState } from "react";
 function Calc() {
   const [addvalue, setaddvalue] = useState("");
-
+  const [result, setresult] = useState("");
   const getvalue = (event) => {
-    setaddvalue(addvalue + event.target.value);
+    var C = (event.target.value);
+    console.log('add:',C);
+    setaddvalue(C)
+   
   };
 
   function clear() {
     setaddvalue("");
+    setresult("");
   }
 
-  const calculate = () => {
-    try {
-      setaddvalue(eval(addvalue));
-    } catch (error) {
-      setaddvalue("Error");
+  //   const calculate = () => {
+  //     try {
+  //       setaddvalue(eval(addvalue));
+  //     } catch (error) {
+  //       setaddvalue("Error");
+  //     }
+
+  function calculate() {
+    var value = document.getElementById("plus").value;
+
+    if (value === "+") {
+      var add = parseInt(addvalue) + parseInt(addvalue);
+      console.log("add:", add);
+      setresult(add);
     }
-  };
+  }
 
   return (
     <>
       <div className="container-fluid">
         <div className="calculator">
-          <div className="cards">
+          <div className="card">
             <div className="setting">
               <i class="set_icon fa fa-ellipsis-v" aria-hidden="true"></i>
             </div>
@@ -34,10 +47,11 @@ function Calc() {
             </div>
             <div className="answer">
               <input value={addvalue} type="text"></input>
+              <h4>{result}</h4>
             </div>
             <div className="numbers mt-5">
               <div className="row m-4">
-                <div className="col-3 mt-4">
+                <div className="col-3">
                   <button
                     type="button"
                     onClick={clear}
@@ -46,18 +60,29 @@ function Calc() {
                     C
                   </button>
                 </div>
-                <div className="col-3 mt-4">
-                  <button type="button" className="col_1 btn btn-dark">
+                <div className="col-3">
+                  <button
+                    type="button"
+                    value="%"
+                    onClick={getvalue}
+                    className="col_1 btn btn-dark"
+                  >
                     %
                   </button>
                 </div>
-                <div className="col-3 mt-4">
+                <div className="col-3">
                   <button type="button" className="col_1 btn btn-dark">
                     <i class="fa fa-times" aria-hidden="true"></i>
                   </button>
                 </div>
-                <div className="col-3 mt-4">
-                  <button type="button" className=" col_1 btn btn-dark">
+                <div className="col-3">
+                  <button
+                    type="button"
+                    style={{ color: "white" }}
+                    value="/"
+                    onClick={getvalue}
+                    className=" col_1 btn btn-dark"
+                  >
                     /
                   </button>
                 </div>
@@ -95,6 +120,7 @@ function Calc() {
                 </div>
                 <div className="col-3">
                   <button
+                    id="subtract"
                     type="button"
                     value="*"
                     onClick={getvalue}
@@ -179,6 +205,7 @@ function Calc() {
                 </div>
                 <div className="col-3">
                   <button
+                    id="plus"
                     type="button"
                     value="+"
                     onClick={getvalue}
