@@ -3,12 +3,11 @@ import React, { useState } from "react";
 function Calc() {
   const [addvalue, setaddvalue] = useState("");
   const [result, setresult] = useState("");
+
   const getvalue = (event) => {
-    
-    setaddvalue( addvalue + event.target.value)
+    setaddvalue(addvalue + event.target.value);
     var C = addvalue + event.target.value;
     console.log("add:", C);
-
   };
 
   function clear() {
@@ -24,13 +23,55 @@ function Calc() {
   //     }
 
   function calculate() {
-    var value = document.getElementById("plus").value;
-    
-    if (value === "+") {
-      var add = parseInt(addvalue) + parseInt(addvalue);
-      console.log("value:", add);
-      setresult(add);
+    // split number
+    const givendata = addvalue;
+    let split_num = givendata.split(/\D/g);
+    console.log(split_num);
+
+    // split operator
+
+    var split_operator = givendata.split(/\d/g);
+    console.log(split_operator);
+
+    // array of string to array of number
+    var chunk = 2;
+    var arr_number = split_num.map(Number);
+    console.log(arr_number);
+    var arr_1 = arr_number.slice(0, chunk);
+    console.log('array:',arr_1)
+    var arr_2 = arr_number.slice(chunk, chunk +arr_number.length);
+
+    // add number
+    // match array value without index(includes())
+
+    var multi = 1;
+    var add = 0;
+    var sub = 0;
+    var divide = 0;
+    for (let j = 0; j < arr_1.length; j++) {
+      if (split_operator.includes("+")) {
+        add += (arr_1[j]);
+        console.log(add);
+        setresult(add);
+      }
     }
+    for (let k = 0; k < arr_number.length; k++) {
+      if (split_operator.includes("*")) {
+        multi = add * arr_number[k];
+        console.log(multi);
+        setresult(multi);
+      }
+    }
+
+   
+
+    // if (split_operator.includes("/")) {
+    //   arr_number.reduce(function (prev, curr) {
+    //     divide = prev / curr;
+    //     console.log(divide);
+    //    setresult(divide)
+    //   });
+    // }
   }
 
   return (
