@@ -29,136 +29,47 @@ function Calc() {
     console.log(split_num);
 
     // split operator
-    var op = 2;
-    var split_operator = givendata.split(/\d/g);
-    console.log(split_operator);
 
-    // split operator array into two parts
-    var ope_1 = split_operator.slice(0, op);
-    var ope_2 = split_operator.slice(op, op + split_operator.length);
+    var operator = givendata.split(/\d/g).filter(Boolean);
+    console.log(operator);
 
     // array of string to array of number
-    var arr_number = split_num.map(Number);
-    console.log(arr_number);
-
-    // split number array into 2 parts
-    var chunk = 2;
-    var arr_1 = arr_number.slice(0, chunk);
-    console.log("array:", arr_1);
-    var arr_2 = arr_number.slice(chunk, chunk + arr_number.length);
+    var number = split_num.map(Number);
+    console.log(number);
 
     // calculation part
-    var add = 0;
+    var ans = 0;
 
     var multi = 1;
-    
-    var sub = 0;
-    
-    var divide = 0;
-   
+    var fnl = 0;
 
     // add...
     // match array value without index(includes())
 
-    for (let j = 0; j < arr_1.length; j++) {
-      if (ope_1.includes("+")) {
-        add += arr_1[j];
-        console.log(add);
-        setresult(add);
-        for (let k = 0; k < arr_2.length; k++) {
-          if (split_operator.includes("*")) {
-            multi = add * arr_2[k];
-            console.log(multi);
-            setresult(multi);
-          } else if (split_operator.includes("-")) {
-            sub = add - arr_2[k];
-            console.log(sub);
-            setresult(sub);
-          } else if (split_operator.includes("/")) {
-            divide = add / arr_2[k];
-            console.log(divide);
-            setresult(divide);
-          }
-        }
-      } 
-    }
+    for (let i = 0; i < number.length; i++) {
+      console.log(number[i]);
 
-    for (let j = 0; j < arr_1.length; j++) {
-      if (ope_1.includes("-")) {
-        arr_1.reduce(function (prev, curr) {
-          sub = prev - curr;
-          console.log(sub);
-          setresult(sub);
-        });
+      for (let j = 0; j < operator.length; j++) {
+        if (operator[j] === "+") {
+          ans += number[i];
+          console.log(ans);
 
-        for (let k = 0; k < arr_2.length; k++) {
-          if (split_operator.includes("+")) {
-            add = sub + arr_2[k];
-            console.log(add);
-            setresult(add);
-          } else if (split_operator.includes("*")) {
-            multi = sub * arr_2[k];
-            console.log(multi);
-            setresult(multi);
-          } else if (split_operator.includes("/")) {
-            divide = sub / arr_2[k];
-            console.log(divide);
-            setresult(divide);
-          } 
-        }
-      }
-    }
+        } else if (operator[j] === "*") {
+          multi *= number[i];
+          console.log(multi);
+        } else if (operator[j] === "-") {
+          number.reduce(function (prev, curr) {
+            ans = prev - curr;
+            console.log(ans);
+          });
+        } else if (operator[j] === "/") {
+          number.reduce(function (prev, curr) {
+            ans = prev / curr;
+            console.log(ans);
+          });
 
-    // multiply ...
 
-    for (let j = 0; j < arr_1.length; j++) {
-      if (ope_1.includes("*")) {
-        multi *= arr_1[j];
-        console.log(multi);
-        setresult(multi);
-
-        for (let k = 0; k < arr_2.length; k++) {
-          if (split_operator.includes("+")) {
-            add = multi + arr_2[k];
-            console.log(add);
-            setresult(add);
-          } else if (split_operator.includes("-")) {
-            sub = multi - arr_2[k];
-            console.log(sub);
-            setresult(sub);
-          } else if (split_operator.includes("/")) {
-            divide = multi / arr_2[k];
-            console.log(divide);
-            setresult(divide);
-          } 
-        }
-      }
-    }
-
-    // division
-
-    for (let j = 0; j < arr_1.length; j++) {
-      if (ope_1.includes("/")) {
-        arr_1.reduce(function (prev, curr) {
-          divide = prev / curr;
-          console.log(divide);
-          setresult(divide);
-        });
-
-        for (let k = 0; k < arr_2.length; k++) {
-          if (split_operator.includes("+")) {
-            add = divide + arr_2[k];
-            console.log(add);
-            setresult(add);
-          } else if (split_operator.includes("-")) {
-            sub = divide - arr_2[k];
-            console.log(sub);
-            setresult(sub);
-          } else if (split_operator.includes("*")) {
-            multi = divide * arr_2[k];
-            console.log(multi);
-            setresult(multi);
-          }
+          
         }
       }
     }
